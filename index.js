@@ -13,6 +13,6 @@ app.get("/express/express", (request, response) => {
     response.send("Hi there");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Listen on the port 3000...");
 });
